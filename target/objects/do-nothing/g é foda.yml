@@ -1,0 +1,13 @@
+type: do-nothing
+item:
+  name: voltar
+  glow: false
+  lore: []
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2584
+    type: NAME_TAG
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"text":"voltar"}],"text":""}'

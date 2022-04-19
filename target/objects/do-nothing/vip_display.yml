@@ -1,0 +1,13 @@
+type: do-nothing
+item:
+  name: Vip display replace
+  glow: false
+  lore: []
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"text":"Vip display replace"}],"text":""}'

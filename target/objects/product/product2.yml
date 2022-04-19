@@ -1,0 +1,34 @@
+selling:
+  items: []
+  commands:
+  - diario @player keys 60
+value: 5
+type: product
+item:
+  name: §6Keys x2
+  glow: true
+  lore:
+  - §r
+  - §7Dobre as chances de
+  - §7encontrar chaves por 1h
+  - §r
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2584
+    type: TRIPWIRE_HOOK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Keys
+        x2"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"text":""}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Dobre
+        as chances de"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"encontrar
+        chaves por 1h"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"text":""}],"text":""}'
+      enchants:
+        ARROW_DAMAGE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS

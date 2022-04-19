@@ -1,0 +1,105 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>me.davethecamper.gateways.pagseguro</groupId>
+  <artifactId>PagSeguroGateway</artifactId>
+  <version>0.1</version>
+  
+  <name>PagSeguroGateway</name>
+  
+  <properties>
+  		<project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
+  		<maven.compiler.source>1.8</maven.compiler.source>
+  		<maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  
+  <dependencies>
+	<!-- https://mvnrepository.com/artifact/br.com.uol.pagseguro/pagseguro-api -->
+    <dependency>
+      <groupId>br.com.uol.pagseguro</groupId>
+      <artifactId>pagseguro-api</artifactId>
+      <version>4.3.2</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>me.davethecamper.cashshop</groupId>
+      <artifactId>CashShop</artifactId>
+      <version>0.0.1</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/cash-shop-0.0.1.jar</systemPath>
+    </dependency>
+    
+    <!--This adds the Spigot API artifact to the build -->
+    <dependency>
+         <groupId>org.spigotmc</groupId>
+         <artifactId>spigot-api</artifactId>
+         <version>1.8.8-R0.1-SNAPSHOT</version>
+         <scope>provided</scope>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.squareup.okhttp/okhttp -->
+	<dependency>
+	    <groupId>com.squareup.okhttp</groupId>
+	    <artifactId>okhttp</artifactId>
+	    <version>2.7.5</version>
+	</dependency>
+    
+	 
+  </dependencies>
+  
+  
+  <build>
+  
+  	<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+	
+	<resources>
+		<resource>
+			<directory>${project.basedir}/src/main/resources</directory>
+			<includes>
+				<include>*</include>
+				<include>**/*</include>
+			</includes>
+		</resource>
+	</resources>
+  
+  
+    <plugins>
+    
+	  <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-shade-plugin</artifactId>
+			<version>3.2.4</version>
+			
+			<configuration>
+				<createDependencyReducedPom>false</createDependencyReducedPom>
+				<relocations>
+					<realocation>
+						<pattern>br.com.uol.pagseguro</pattern>
+						<shadedPattern>me.davethecamper.gateways.pagseguro.libs.pagseguro</shadedPattern>
+					</realocation>
+					
+					<realocation>
+						<pattern>com.squareup.okhttp</pattern>
+						<shadedPattern>me.davethecamper.gateways.pagseguro.libs.okhttp</shadedPattern>
+					</realocation>
+				</relocations>
+				
+			</configuration>
+			
+			<executions>
+				<execution>
+					<phase>package</phase>
+					<goals>
+						<goal>shade</goal>
+					</goals>
+				</execution>
+			</executions>
+	  </plugin>
+		
+	</plugins>
+	
+	
+  </build>
+  
+  
+</project>

@@ -1,0 +1,82 @@
+inventory:
+  name: §bVips
+  size: 54
+  items:
+    slot:
+      '12':
+        name: vip_display
+        type: DO_NOTHING
+      '13':
+        name: vip_display
+        type: DO_NOTHING
+      '45':
+        name: product0
+        type: DO_NOTHING
+      '14':
+        name: vip_display
+        type: DO_NOTHING
+      '46':
+        name: product0
+        type: DO_NOTHING
+      '15':
+        name: vip_display
+        type: DO_NOTHING
+      '48':
+        name: product0
+        type: DO_NOTHING
+      '50':
+        name: product0
+        type: DO_NOTHING
+      '51':
+        name: product0
+        type: DO_NOTHING
+      '20':
+        name: vip_display
+        type: DO_NOTHING
+      '52':
+        name: product0
+        type: DO_NOTHING
+      '21':
+        name: vip_display
+        type: DO_NOTHING
+      '53':
+        name: back_button
+        type: STATIC
+      '22':
+        name: vip_display
+        type: DO_NOTHING
+      '23':
+        name: vip_display
+        type: DO_NOTHING
+      '24':
+        name: vip_display
+        type: DO_NOTHING
+      '11':
+        name: vip_display
+        type: DO_NOTHING
+      '47':
+        name: product0
+        type: DO_NOTHING
+      '49':
+        name: vip_player_info
+        type: DO_NOTHING
+      '31':
+        name: vip_boost
+        type: BUY_PRODUCT
+type: category
+item:
+  name: §bVips
+  glow: true
+  lore: []
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"Vips"}],"text":""}'
+      enchants:
+        ARROW_DAMAGE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS

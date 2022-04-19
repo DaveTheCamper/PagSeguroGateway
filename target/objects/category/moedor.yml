@@ -1,0 +1,73 @@
+inventory:
+  name: §6Moedor
+  size: 27
+  items:
+    slot:
+      '0':
+        name: product0
+        type: DO_NOTHING
+      '1':
+        name: product0
+        type: DO_NOTHING
+      '2':
+        name: product0
+        type: DO_NOTHING
+      '6':
+        name: product0
+        type: DO_NOTHING
+      '7':
+        name: product0
+        type: DO_NOTHING
+      '8':
+        name: product0
+        type: DO_NOTHING
+      '9':
+        name: product0
+        type: DO_NOTHING
+      '10':
+        name: product0
+        type: DO_NOTHING
+      '11':
+        name: product0
+        type: DO_NOTHING
+      '15':
+        name: product0
+        type: DO_NOTHING
+      '16':
+        name: product0
+        type: DO_NOTHING
+      '17':
+        name: product0
+        type: DO_NOTHING
+      '18':
+        name: product0
+        type: DO_NOTHING
+      '19':
+        name: product0
+        type: DO_NOTHING
+      '20':
+        name: product0
+        type: DO_NOTHING
+      '24':
+        name: product0
+        type: DO_NOTHING
+      '25':
+        name: product0
+        type: DO_NOTHING
+      '26':
+        name: product0
+        type: DO_NOTHING
+type: category
+item:
+  name: §6Moedor
+  glow: false
+  lore: []
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: HOPPER
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Moedor"}],"text":""}'
+      blockMaterial: HOPPER
